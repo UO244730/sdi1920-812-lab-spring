@@ -14,29 +14,24 @@
 				
 				<li><a href="/">Home</a>
 				<li id="marks-menu" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					Gestión de notas<span class="caret"></span>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" th:text="#{mark_manage.message}">
+					<span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="/mark/add">Agregar Nota</a></li>
-					<li><a href="/mark/list">Ver Notas</a></li>
+					<li><a href="/mark/add" th:text="#{add_mark.message}"></a></li>
+					<li><a href="/mark/list" th:text="#{see_mark.message}"></a></li>
 				</ul>
 				</li>
 				<li id="users-menu" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					Gestión de usuarios<span class="caret"></span>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" th:text="#{user_manage.message}"><span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="/user/add">Agregar usuario</a></li>
-					<li><a href="/user/list">Ver Usuarios</a></li>
+					<li><a href="/user/add" th:text="#{add_user.message}"></a></li>
+					<li><a href="/user/list" th:text="#{see_user.message}"></a></li>
 				</ul>
 				</li>
 			</ul>
 
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="/teacher/list">Ver Profesores</a></li>
-				<li><a href="/teacher/add">Agregar Profesor</a></li>
-			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown"><a id="btnLanguage" href="
