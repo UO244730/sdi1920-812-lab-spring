@@ -18,9 +18,10 @@ public class TeacherController {
 	private TeachersService teachersService;
 
 	@RequestMapping("/teacher/list")
-	public String getList(Model model) {
-		model.addAttribute("teacherList", teachersService.getTeachers());
-		return "teacher/list";
+	public String getList() {
+		//model.addAttribute("teacherList", teachersService.getTeachers());
+		return teachersService.getTeachers().toString();
+		//return "teacher/list";
 	}
 	
 	

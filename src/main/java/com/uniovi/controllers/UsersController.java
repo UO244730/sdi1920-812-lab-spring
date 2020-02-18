@@ -60,6 +60,7 @@ public class UsersController {
 
 	@RequestMapping(value = "/user/edit/{id}")
 	public String getEdit(Model model, @PathVariable Long id) {
+		System.out.println("GET");
 		User user = usersService.getUser(id);
 		model.addAttribute("user", user);
 		return "user/edit";
@@ -67,8 +68,12 @@ public class UsersController {
 
 	@RequestMapping(value = "/user/edit/{id}", method = RequestMethod.POST)
 	public String setEdit(Model model, @PathVariable Long id, @ModelAttribute User user) {
+		System.out.println("POST");
 		user.setId(id);
+		System.out.println("POST2");
+		System.out.println(user);
 		usersService.addUser(user);
+		System.out.println("POST3");
 		return "redirect:/user/details/" + id;
 	}
 
