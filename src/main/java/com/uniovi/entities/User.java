@@ -94,4 +94,12 @@ public class User {
 		return "User [id=" + id + ", dni=" + dni + ", name=" + name + ", lastName=" + lastName + ", password="
 				+ password + ", passwordConfirm=" + passwordConfirm + ", role=" + role + ", marks=" + marks + "]";
 	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 }
