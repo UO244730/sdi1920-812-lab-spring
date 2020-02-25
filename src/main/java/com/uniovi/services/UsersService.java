@@ -45,4 +45,12 @@ public class UsersService {
 	public void deleteUser(Long id) {
 		usersRepository.deleteById(id);
 	}
+	
+	
+	public List<User> searchUsersByNameAndLastName(String name, String lastName){
+		List<User> users = new ArrayList<User>();
+		users = usersRepository.searchByNameandLastName(name, lastName);
+		return users;
+		
+	}
 }
