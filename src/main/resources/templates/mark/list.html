@@ -87,7 +87,7 @@ $("#tableMarks").load(urlUpdate);
 /*]]>*/
 </script>
 								</div>
-								div th:unless="${mark.resend}"> <a
+								<div th:unless="${mark.resend}"> <a
 									th:href="${'/mark/' + mark.id + '/resend'}">No reenviar</a>
 								<button type="button" th:id="${'noresendButton' + mark.id}"
 									class="btn btn-default">No reenviar</button>
