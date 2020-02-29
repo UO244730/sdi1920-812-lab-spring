@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import com.uniovi.tests.util.SeleniumUtils;
 
-public class NavView extends PO_View {
+public class PO_NavView extends PO_View {
 
 	/**
 	 * CLicka una de las opciones principales (a href) y comprueba que se vaya a la
